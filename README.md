@@ -261,6 +261,15 @@ Contributions are welcome! To contribute:
 5. Open a pull request.
 
 ---
+## Repository History Cleaned
+
+As part of preparing this repository for collaboration, its commit history has been cleaned. This action ensures a more streamlined project for contributors and removes outdated or redundant information in the history. 
+
+The current state reflects the latest progress as of 24/01/2025.
+
+For questions regarding prior work or additional details, please contact the author.
+
+---
 
 ### License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
