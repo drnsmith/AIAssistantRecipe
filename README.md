@@ -1,4 +1,4 @@
-## Agentic Recipe Assistant
+## Multi-Agent AI System Recipe Assistant
 
 ### Scenario: Where Data Science Meets AI/ML Engineering
 You're part of a team at a cutting-edge culinary tech company, tasked with developing an AI-driven recipe assistant. The goal is transformative: empower users to create and customise recipes based on their unique preferences, available ingredients, and dietary needs—all without endless web searches or scrolling through blogs.
