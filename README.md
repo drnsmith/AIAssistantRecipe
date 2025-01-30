@@ -16,19 +16,38 @@ Together, your work enables the assistant to:
 
 ---
 
-### Overview
-The **Agentic Recipe Assistant** is an AI-powered solution designed to transform the way users create and customise recipes. Using technologies like Redis, Prometheus, and FastAPI, the system generates personalised recipes based on user inputs, such as available ingredients, dietary preferences, and cooking styles. The assistant adapts to feedback, refines its suggestions, and learns over time to deliver a seamless user experience.
+# Multi-Agent AI-Powered Recipe Assistant
 
----
+## Overview
+The **AI-Powered Recipe Assistant** is designed to revolutionise how users **discover, customise, and generate recipes** based on **available ingredients, dietary needs, and preferences**. This AI-driven tool adapts to **user feedback**, making cooking **efficient, personalised, and dynamic**.
 
-### Features
-- **Ingredient-based recipe generation**: Provide a list of ingredients, and the assistant generates tailored recipes.
-- **Customisable recipes**: Adjust recipes based on preferences like dietary restrictions or cooking methods.
-- **Real-time adaptation**: Modify recipes dynamically (e.g., "Make it spicier" or "Add a vegetarian option").
-- **Cache Integration**: Redis caching to optimise performance for frequent queries.
-- **Performance Monitoring**: Metrics for API performance and cache usage using Prometheus.
-- **Load Testing**: Locust integration to simulate high traffic and monitor scalability.
+## Features
+### 1. **Ingredient-Based Recipe Generation**
+- AI suggests recipes based on available ingredients, **minimising waste** and optimising **meal planning**.
 
+### 2. **Customisable Recipes**
+- Users can **modify** recipes dynamically (e.g., **"Make it spicier"**, **"Substitute for a vegan option"**).
+- Personalised recommendations based on **dietary preferences** (e.g., keto, gluten-free, high-protein).
+
+### 3. **Real-Time Adaptation & Learning**
+- AI **learns from user feedback** and improves recommendations over time.
+- Uses **embeddings** to suggest similar recipes based on **past choices**.
+
+### 4. **Performance Optimisation**
+- Implements **Redis caching** for **quick response times** and **efficient API queries**.
+- Uses **Prometheus & Grafana** for monitoring system **performance metrics**.
+
+### 5. **Scalability & Load Testing**
+- Integrates **Locust** for simulating **high-traffic** scenarios.
+- Ensures **stable API performance** under heavy load conditions.
+
+## Technologies Used
+- **Backend:** FastAPI
+- **Data Processing:** NumPy, Pandas
+- **Caching:** Redis
+- **Monitoring:** Prometheus, Grafana
+- **Load Testing:** Locust
+- **Deployment:** Docker, Docker Compose
 ---
 The `data/ folder` is expected to include the following files:
 
@@ -41,16 +60,6 @@ Due to size and licensing constraints, these files are not included. To prepare 
 1. Obtain an open-source recipe dataset (e.g., Kaggle).
 2. Use `app/data_loader.py` to preprocess the dataset.
 3. Generate embeddings for recipes using `recipe_logic.py`.
----
-
-### Technologies Used
-- **Backend**: FastAPI for API development.
-- **Caching**: Redis for optimised performance.
-- **Monitoring**: Prometheus for metrics and Grafana for visualisation.
-- **Load Testing**: Locust for stress testing.
-- **Deployment**: Docker for containerisation and Docker Compose for multi-container orchestration.
-- **Data Processing**: NumPy, Pandas for data handling and processing.
-
 ---
 ### Frontend Integration
 The frontend/ folder provides a simple user-facing interface. It communicates with the backend APIs to enable real-time interaction.
@@ -111,9 +120,7 @@ $ cd Agentic-Recipe-Assistant
    ```
 
 ---
-
 ### Usage
-
 #### Access the API
 1. **Navigate to Swagger UI**
    - Open your browser and go to: `http://localhost:8000/docs`.
@@ -249,6 +256,23 @@ agentic-recipe-assistant/
 - [ ] Integrate IoT features (e.g., smart fridges).
 - [ ] Expand nutritional analysis capabilities.
 - [ ] Add multi-user support for collaborative cooking.
+
+---
+
+## Monetisation Strategy
+### **1. Freemium Subscription for Consumers**
+- Basic AI recommendations for free, **premium features (advanced meal planning, custom AI meal prep) behind a paywall**.
+
+### **2. B2B API for Food & Nutrition Companies**
+- Sell API access to **meal kit companies, grocery retailers, and nutrition apps**.
+
+### **3. Affiliate Revenue from Grocery & Meal Kit Providers**
+- Auto-generate **grocery lists** based on user selections and **earn commissions** on orders via partnerships.
+
+## Next Steps
+- Develop an **MVP prototype** with **real-time recipe adaptation**.
+- Partner with **nutrition-focused startups** for beta testing.
+- Deploy **a scalable cloud-hosted API** for broader adoption.
 
 ---
 
